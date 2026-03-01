@@ -6,7 +6,7 @@ A **single API** for structure/damage analysis (image detection) on **drone** an
 
 - **Endpoint:** `POST /v1/analyze` (single image: file or base64) and `POST /v1/analyze/batch` (multiple files).
 - **Source type:** `source_type`: `drone` | `google_maps` | `inspection` (same model, for context only).
-- **Response:** For each image: `damage_description` (text) and optional `labels`.
+- **Response:** For each image: `damage_description` (text) and optional `labels` (e.g. damage class + confidence). Use these to tag assets or flag critical buildings; see [TERMINOLOGY_AND_LABELS.md](TERMINOLOGY_AND_LABELS.md).
 
 ## Running the service
 
