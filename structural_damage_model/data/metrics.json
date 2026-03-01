@@ -1,0 +1,10 @@
+{
+  "BLEU-4 (caption vs reference)": {
+    "value": "0.11",
+    "notes": "Official eval, n=3; blip2."
+  },
+  "ROUGE-L (caption vs reference)": {
+    "value": "0.59",
+    "notes": "Same eval set."
+  }
+}

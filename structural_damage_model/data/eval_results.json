@@ -1,0 +1,32 @@
+{
+  "n_samples": 3,
+  "eval_file": "Test/test_images/eval_set_with_predictions.json",
+  "model": "blip2",
+  "metrics": {
+    "BLEU-4": 0.1104,
+    "ROUGE-L": 0.5915
+  },
+  "per_sample": [
+    {
+      "path": "/Users/ebaykurt/Desktop/StartUp/structureanalyse/Test/test_images/building_brick_facade.png",
+      "reference": "Numerous thin cracks in the brick facade, including diagonal and spiderweb patterns around windows and horizontal crack lines above the foundation. Foundation layer shows uneven texture, crumbling and",
+      "prediction": "Cracks in the brick facade and around windows; foundation shows crumbling. Two ground-floor windows are boarded up.",
+      "BLEU-4": 0.0951,
+      "ROUGE-L": 0.5625
+    },
+    {
+      "path": "/Users/ebaykurt/Desktop/StartUp/structureanalyse/Test/test_images/building_complex_street.png",
+      "reference": "Boarded-up windows on white-painted sections; elevated foundations with visible support columns (inspect for cracks/spalling). Cracked and uneven paved surface in foreground; fire escapes visible. Uti",
+      "prediction": "Boarded-up windows and elevated foundations with support columns. Cracked paved surface; fire escapes and a leaning utility pole.",
+      "BLEU-4": 0.0399,
+      "ROUGE-L": 0.5455
+    },
+    {
+      "path": "/Users/ebaykurt/Desktop/StartUp/structureanalyse/Test/test_images/paved_lot_buildings.png",
+      "reference": "Extensive cracking in concrete/pavement in foreground with vegetation growing through cracks. Building elevated on concrete stilts with exposed support structures; external metal staircase. Uneven gro",
+      "prediction": "Cracking in pavement with vegetation; building on concrete stilts and external metal staircase. Uneven ground with debris.",
+      "BLEU-4": 0.1961,
+      "ROUGE-L": 0.6667
+    }
+  ]
+}

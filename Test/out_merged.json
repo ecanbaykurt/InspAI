@@ -1,0 +1,625 @@
+{
+  "projectId": "proj-001",
+  "projectNumber": "HUD-2025-001",
+  "docType": "HUD Multifamily Assessment",
+  "sectionIndex": [
+    {
+      "sectionName": "FORECLOSURE SALE",
+      "pageStart": 1,
+      "pageEnd": 1,
+      "notes": ""
+    },
+    {
+      "sectionName": "INVITATION TO BID",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "notes": ""
+    },
+    {
+      "sectionName": "SECTION I: INTRODUCTIONS AND GENERAL INFORMATION",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "notes": ""
+    },
+    {
+      "sectionName": "SECTION II: PRIOR TO THE FORECLOSURE SALE",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "notes": ""
+    },
+    {
+      "sectionName": "SECTION III: DURING THE FORECLOSURE SALE \u2013 REGISTERING AS A BIDDER AND",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "notes": ""
+    },
+    {
+      "sectionName": "SECTION IV: AFTER FORECLOSURE SALE AND LEADING UP TO CLOSING",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "notes": ""
+    },
+    {
+      "sectionName": "SECTION V: CLOSING",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "notes": ""
+    },
+    {
+      "sectionName": "EXHIBITS AND ATTACHMENTS",
+      "pageStart": 11,
+      "pageEnd": 17,
+      "notes": ""
+    },
+    {
+      "sectionName": "Exhibit 3",
+      "pageStart": 18,
+      "pageEnd": 19,
+      "notes": ""
+    },
+    {
+      "sectionName": "I.  TERMS OF BID",
+      "pageStart": 20,
+      "pageEnd": 20,
+      "notes": ""
+    },
+    {
+      "sectionName": "HIGH BIDDER OBLIGATIONS BEFORE CLOSING",
+      "pageStart": 21,
+      "pageEnd": 21,
+      "notes": ""
+    },
+    {
+      "sectionName": "HUD\u2019S REVIEW OF POST-BID SUBMISSION",
+      "pageStart": 22,
+      "pageEnd": 22,
+      "notes": ""
+    },
+    {
+      "sectionName": "EXTENSION OF CLOSING DATE",
+      "pageStart": 23,
+      "pageEnd": 23,
+      "notes": ""
+    },
+    {
+      "sectionName": "VII.  PRORATIONS",
+      "pageStart": 24,
+      "pageEnd": 25,
+      "notes": ""
+    },
+    {
+      "sectionName": "31 U.S.C. \u00a73729, 3802).",
+      "pageStart": 26,
+      "pageEnd": 29,
+      "notes": ""
+    }
+  ],
+  "propertyProfile": {
+    "address": "30 A.M.\nMarch 16th\n26\nCircuit Court for Baltimore City Clarence M. Mitchell Court House 100 N Calvert Street\nCourt House Door Calvert Street Entrance Baltimore, MD 21202",
+    "city": "Entrance Baltimore",
+    "state": "MD",
+    "zip": "21202",
+    "propertyName": "",
+    "buildingType": "Multi family",
+    "yearBuilt": null,
+    "unitCount": 200,
+    "stories": null,
+    "utilities": [
+      "Electric",
+      "Gas",
+      "Water",
+      "Sewer"
+    ],
+    "notes": ""
+  },
+  "bidRequirements": {
+    "deadlines": [],
+    "submissionMethod": "Electronic; Mail",
+    "requiredForms": [
+      "form is",
+      "Attachment A",
+      "form of",
+      "Form HUD",
+      "Form of",
+      "form number",
+      "Form \nHUD-2530",
+      "form after",
+      "Form HUD-9552",
+      "form the"
+    ],
+    "specialTerms": [],
+    "notes": ""
+  },
+  "exhibitsList": [
+    {
+      "exhibitName": "Exhibit C",
+      "pageStart": 4,
+      "pageEnd": 4
+    },
+    {
+      "exhibitName": "Exhibit 1 - Legal Description",
+      "pageStart": 11,
+      "pageEnd": 11
+    },
+    {
+      "exhibitName": "Exhibit 2 - Property Photos",
+      "pageStart": 11,
+      "pageEnd": 11
+    },
+    {
+      "exhibitName": "Exhibit 3 - Property Summary",
+      "pageStart": 11,
+      "pageEnd": 11
+    },
+    {
+      "exhibitName": "Exhibit 3",
+      "pageStart": 18,
+      "pageEnd": 18
+    },
+    {
+      "exhibitName": "Exhibit A",
+      "pageStart": 20,
+      "pageEnd": 20
+    }
+  ],
+  "images": [
+    {
+      "imageId": "f8d977b2-decc-4568-9173-91222056db40",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 12,
+      "imageType": "spec_page",
+      "storagePath": "memory/f8d977b2-decc-4568-9173-91222056db40",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAChcAAAMpCAAAAAAodq+4AAAACXBIWXMAAA7EAAAOxAGVKw4bAACXFklE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAChcAAAMpCAAAAAAodq+4AAAACXBIWXMAAA7EAAAOxAGVKw4bAACXFklE...",
+      "createdAt": "2026-02-28T07:29:13Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "6b89e168-16d3-4e33-8555-ae93ecf3a186",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 12,
+      "imageType": "spec_page",
+      "storagePath": "memory/6b89e168-16d3-4e33-8555-ae93ecf3a186",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAChcAAAMpCAAAAAAodq+4AAAACXBIWXMAAA7EAAAOxAGVKw4bAADOsElE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAChcAAAMpCAAAAAAodq+4AAAACXBIWXMAAA7EAAAOxAGVKw4bAADOsElE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "96a92411-4f56-409f-b738-7f10e10a94b7",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 12,
+      "imageType": "spec_page",
+      "storagePath": "memory/96a92411-4f56-409f-b738-7f10e10a94b7",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAChcAAAMpCAAAAAAodq+4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAA1rklE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAChcAAAMpCAAAAAAodq+4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAA1rklE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "b8b52f9c-eb66-43e9-adf9-481717fe1d16",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 12,
+      "imageType": "spec_page",
+      "storagePath": "memory/b8b52f9c-eb66-43e9-adf9-481717fe1d16",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAChcAAAMpCAAAAAAodq+4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAWg0lE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAChcAAAMpCAAAAAAodq+4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAWg0lE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "326de906-5836-486b-85bb-8cfda59185a7",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 12,
+      "imageType": "spec_page",
+      "storagePath": "memory/326de906-5836-486b-85bb-8cfda59185a7",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAChcAAABsCAAAAABGCy76AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB50lE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAChcAAABsCAAAAABGCy76AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB50lE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "fc772d39-8607-419a-a8e3-fc9724b2096b",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 13,
+      "imageType": "spec_page",
+      "storagePath": "memory/fc772d39-8607-419a-a8e3-fc9724b2096b",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArcAAAB9CAIAAAA3E9zbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAPRHUlE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArcAAAB9CAIAAAA3E9zbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAPRHUlE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "b28ef003-6ddc-4640-b5b5-cf7ebf31c263",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 13,
+      "imageType": "spec_page",
+      "storagePath": "memory/b28ef003-6ddc-4640-b5b5-cf7ebf31c263",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArcAAAB9CAIAAAA3E9zbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAPZC0lE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArcAAAB9CAIAAAA3E9zbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAPZC0lE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "7596b7f9-11be-4ab7-a7be-6c96f6f97e49",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 13,
+      "imageType": "spec_page",
+      "storagePath": "memory/7596b7f9-11be-4ab7-a7be-6c96f6f97e49",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArcAAAB9CAIAAAA3E9zbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAPf8klE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArcAAAB9CAIAAAA3E9zbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAPf8klE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "47fa7b6d-e0a2-4aef-abba-93127ab336ab",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 13,
+      "imageType": "spec_page",
+      "storagePath": "memory/47fa7b6d-e0a2-4aef-abba-93127ab336ab",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArcAAAA4CAIAAABohkcEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAG5AklE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArcAAAA4CAIAAABohkcEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAG5AklE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "77eaf07d-14ab-4c74-906b-15b5bfb4b630",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 13,
+      "imageType": "spec_page",
+      "storagePath": "memory/77eaf07d-14ab-4c74-906b-15b5bfb4b630",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAecAAACzCAIAAAA8B0NWAAAACXBIWXMAAA7EAAAOxAGVKw4bAAJVrUlE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAecAAACzCAIAAAA8B0NWAAAACXBIWXMAAA7EAAAOxAGVKw4bAAJVrUlE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "e029772c-8f01-48ab-827e-a02616a07951",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 13,
+      "imageType": "spec_page",
+      "storagePath": "memory/e029772c-8f01-48ab-827e-a02616a07951",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAecAAACzCAIAAAA8B0NWAAAACXBIWXMAAA7EAAAOxAGVKw4bAANOy0lE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAecAAACzCAIAAAA8B0NWAAAACXBIWXMAAA7EAAAOxAGVKw4bAANOy0lE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "193633c4-f5d1-4277-842b-eedb5d0d7b67",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 13,
+      "imageType": "spec_page",
+      "storagePath": "memory/193633c4-f5d1-4277-842b-eedb5d0d7b67",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAecAAABfCAIAAABdgZivAAAACXBIWXMAAA7EAAAOxAGVKw4bAAGlhklE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAecAAABfCAIAAABdgZivAAAACXBIWXMAAA7EAAAOxAGVKw4bAAGlhklE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "358da831-0bee-4893-805d-d6059a5a8005",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/358da831-0bee-4893-805d-d6059a5a8005",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAGD3klE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAGD3klE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "41c94ba3-5769-4569-960e-a1cf2b0ec4c4",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/41c94ba3-5769-4569-960e-a1cf2b0ec4c4",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAALiP0lE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAALiP0lE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "6a51b8e3-84f9-4dc8-a074-3303b8fc3082",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/6a51b8e3-84f9-4dc8-a074-3303b8fc3082",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAANfi0lE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAANfi0lE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "660d2f26-56cc-48d3-97c9-fc2d61cde040",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/660d2f26-56cc-48d3-97c9-fc2d61cde040",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAANwpklE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAANwpklE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "f4c4a21f-318a-4d6a-9460-ccbda13ab1d2",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/f4c4a21f-318a-4d6a-9460-ccbda13ab1d2",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAN9oklE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAN9oklE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "8815dddb-1812-4613-ab15-f87ef8912755",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/8815dddb-1812-4613-ab15-f87ef8912755",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAN4ZklE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAN4ZklE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "04bf5ee0-5b9a-4b16-8392-33f88008a235",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/04bf5ee0-5b9a-4b16-8392-33f88008a235",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAFPCElE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAFPCElE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "bd4737f9-7daa-400c-9476-944b88fba1ac",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/bd4737f9-7daa-400c-9476-944b88fba1ac",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAL7fUlE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAL7fUlE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "5be5d2ea-c34b-4ac0-94e7-533635b70ae4",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/5be5d2ea-c34b-4ac0-94e7-533635b70ae4",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAMmKElE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAMmKElE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "2b6d3253-ef3b-45b0-acb0-7f78a9e04690",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/2b6d3253-ef3b-45b0-acb0-7f78a9e04690",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAC98klE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAC98klE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "67c039dc-48be-4064-8191-9d1017c17a82",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/67c039dc-48be-4064-8191-9d1017c17a82",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAKtYklE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAKtYklE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "a044c373-8677-4040-96fd-5dc57487c387",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/a044c373-8677-4040-96fd-5dc57487c387",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAM0o0lE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAM0o0lE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "ee346dda-7ff0-461e-96fb-6e8d82f8db12",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/ee346dda-7ff0-461e-96fb-6e8d82f8db12",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAIaKUlE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAIaKUlE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "db77b6fc-7beb-4f60-9ce0-bbf4720b714b",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/db77b6fc-7beb-4f60-9ce0-bbf4720b714b",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAMJd0lE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAMJd0lE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "a7750302-68ea-4ba7-923e-a67071a298c8",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/a7750302-68ea-4ba7-923e-a67071a298c8",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAK3/ElE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAK3/ElE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "323f750a-c14b-403d-8a0e-60ece0af519f",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/323f750a-c14b-403d-8a0e-60ece0af519f",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAE2i0lE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAE2i0lE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "4cccab01-90c4-43f6-8742-86ecf127fdd4",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/4cccab01-90c4-43f6-8742-86ecf127fdd4",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAANPdElE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAANPdElE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    },
+    {
+      "imageId": "6a664c10-4ae7-496e-9a42-7c050a4aada4",
+      "projectId": "proj-001",
+      "projectNumber": "HUD-2025-001",
+      "pageNumber": 14,
+      "imageType": "spec_page",
+      "storagePath": "memory/6a664c10-4ae7-496e-9a42-7c050a4aada4",
+      "publicUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAJrnklE...",
+      "thumbnailUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAACOCAIAAADy75hfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAJrnklE...",
+      "createdAt": "2026-02-28T07:29:14Z",
+      "labels": [],
+      "summary": "No explicit condition labels in page text.",
+      "bidImpactNotes": ""
+    }
+  ],
+  "categoryCounts": {
+    "Structural cracking": 0,
+    "Concrete spalling": 0,
+    "Corrosion exposure": 0,
+    "Water intrusion": 0,
+    "Surface deterioration": 0,
+    "Settlement indicators": 0,
+    "Misalignment": 0,
+    "Material degradation": 0,
+    "Previous repair evidence": 0,
+    "Mold moisture signs": 0,
+    "Fire damage signs": 0,
+    "Code compliance concern": 0
+  },
+  "projectSummaryReport": {
+    "totalImages": 30,
+    "imagesFlagged": 0,
+    "topCategories": [],
+    "keyInsights": [
+      "No conditions explicitly cited in text."
+    ],
+    "overallRiskLevel": "low"
+  },
+  "estimatorChecklist": [
+    "Verify scope against flagged categories",
+    "Confirm unit count and building footprint for pricing",
+    "Include contingency for unknown conditions",
+    "Review exhibits for existing repair scope"
+  ],
+  "unknownsAndGaps": [
+    "No structural conditions cited in extracted text; site visit recommended."
+  ],
+  "pricingRiskNotes": [],
+  "nextSteps": [
+    "Complete estimator checklist before finalizing bid",
+    "Request site access if not already scheduled",
+    "Cross-reference exhibits with section index"
+  ]
+}

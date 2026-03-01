@@ -1,0 +1,17 @@
+[
+  {
+    "path": "Test/test_images/building_brick_facade.png",
+    "damageDescription": "Numerous thin cracks in the brick facade, including diagonal and spiderweb patterns around windows and horizontal crack lines above the foundation. Foundation layer shows uneven texture, crumbling and missing material; central ground-floor area has pronounced cracking and chipping. Two ground-floor windows are boarded up.",
+    "prediction": "Cracks in the brick facade and around windows; foundation shows crumbling. Two ground-floor windows are boarded up."
+  },
+  {
+    "path": "Test/test_images/building_complex_street.png",
+    "damageDescription": "Boarded-up windows on white-painted sections; elevated foundations with visible support columns (inspect for cracks/spalling). Cracked and uneven paved surface in foreground; fire escapes visible. Utility pole leaning; mixed maintained and unmaintained building sections.",
+    "prediction": "Boarded-up windows and elevated foundations with support columns. Cracked paved surface; fire escapes and a leaning utility pole."
+  },
+  {
+    "path": "Test/test_images/paved_lot_buildings.png",
+    "damageDescription": "Extensive cracking in concrete/pavement in foreground with vegetation growing through cracks. Building elevated on concrete stilts with exposed support structures; external metal staircase. Uneven ground with tire tracks and debris.",
+    "prediction": "Cracking in pavement with vegetation; building on concrete stilts and external metal staircase. Uneven ground with debris."
+  }
+]

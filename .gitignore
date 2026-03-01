@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*~
+
+# Model / data (optional: track small data, ignore large)
+# structural_damage_model/data/images/
+*.pt
+*.bin
+*.safetensors
+
+# Local / secrets
+.env
+.env.local
+*.key
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/

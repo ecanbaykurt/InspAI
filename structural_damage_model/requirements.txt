@@ -1,0 +1,17 @@
+# Structural damage description model (InspAI)
+# Install in your venv: pip install -r structural_damage_model/requirements.txt
+
+torch>=2.0.0
+torchvision
+transformers>=4.40.0
+accelerate
+Pillow
+
+# Eval (BLEU, ROUGE)
+nltk>=3.8
+rouge-score>=0.1.2
+
+# Optional for fine-tuning (uncomment if you use LLaMA-Factory or similar):
+# peft
+# datasets
+# bitsandbytes

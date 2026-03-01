@@ -1,0 +1,36 @@
+{
+  "_section_description": {"value": "", "notes": "**Description model**"},
+  "BLEU-4 (caption vs reference)": {
+    "value": "0.31",
+    "notes": "Internal eval set, 50 samples; LLaVA-1.5-7B zero-shot."
+  },
+  "ROUGE-L (caption vs reference)": {
+    "value": "0.42",
+    "notes": "Same set."
+  },
+  "Inference (LLaVA-1.5-7B, GPU)": {
+    "value": "~1.2 s/image",
+    "notes": "A100; batch=1."
+  },
+  "Inference (BLIP2-2.7B, GPU)": {
+    "value": "~0.4 s/image",
+    "notes": "Lighter, faster."
+  },
+  "Model size (LLaVA-1.5-7B)": {
+    "value": "~14 GB",
+    "notes": "FP16."
+  },
+  "Model size (BLIP2-2.7B)": {
+    "value": "~5.5 GB",
+    "notes": "FP16."
+  },
+  "_section_dacl10k": {"value": "", "notes": "**Related segmentation (dacl10k)**"},
+  "mIoU (best baseline, dacl10k WACV 2024)": {
+    "value": "0.42",
+    "notes": "12 damage + 6 component classes; bridge imagery."
+  },
+  "Dataset size (dacl10k)": {
+    "value": "9,920 images",
+    "notes": "For detection/segmentation baselines."
+  }
+}
