@@ -1,24 +1,24 @@
 # Test images for structural damage description model
 
-Bu klasör, yapı hasarı tanımlama modelini test etmek için kullanılan 3 örnek görseli içerir.
+This folder contains 3 sample images used to test the structural damage description model.
 
-## Görseller
+## Images
 
-- **building_brick_facade.png** — Tuğla cephe; çatlaklar, temel aşınması, tahta kapalı pencereler.
-- **building_complex_street.png** — Bina kompleksi, asfalt çatlakları, yangın merdivenleri, eğik direk.
-- **paved_lot_buildings.png** — Kırık beton zemin, yükseltilmiş bina temelleri, dış merdiven.
+- **building_brick_facade.png** — Brick facade; cracks, foundation wear, boarded-up windows.
+- **building_complex_street.png** — Building complex, pavement cracks, fire escapes, leaning utility pole.
+- **paved_lot_buildings.png** — Cracked concrete ground, elevated building foundations, external staircase.
 
-## Test sonuçları
+## Test results
 
-Referans açıklamalar (görsel içeriklerinden türetilmiş) `test_results.json` içinde. Model çıktısıyla karşılaştırmak için kullanabilirsiniz.
+Reference descriptions (derived from image content) are in `test_results.json`. Use them to compare with model output.
 
-## Bu görsellerle inference çalıştırma
+## Running inference on these images
 
-**Proje kökünden:**
+**From the project root:**
 
 ```bash
-# Görsel dosyaları üzerinde (LLaVA veya BLIP2 ile; GPU önerilir)
+# On image files (LLaVA or BLIP2; GPU recommended)
 python3 -m structural_damage_model.run_inference_on_images Test/test_images/ -o Test/test_images/predictions.json --model blip2
 ```
 
-Mac’te PyTorch bazen kilitlenebilir; gerçek model testi için Linux + CUDA kullanın.
+PyTorch may hang on macOS; use Linux + CUDA for real model testing.

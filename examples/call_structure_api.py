@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Example: Uygulama tarafında Structure Analysis API nasıl çağrılır.
-Tek görsel (dosya veya base64) ve batch örneği.
+Example: How to call the Structure Analysis API from your application.
+Single image (file or base64) and batch examples.
 """
 from __future__ import annotations
 
@@ -16,12 +16,12 @@ except ImportError:
     print("pip install requests")
     sys.exit(1)
 
-# API base URL (ortama göre değiştirin)
+# API base URL (change for your environment)
 DEFAULT_BASE = "http://localhost:8000"
 
 
 def analyze_file(base_url: str, image_path: str, source_type: str = "inspection") -> dict:
-    """Tek görsel: dosya yükle."""
+    """Single image: file upload."""
     url = f"{base_url.rstrip('/')}/v1/analyze"
     with open(image_path, "rb") as f:
         r = requests.post(url, files={"file": (Path(image_path).name, f)}, data={"source_type": source_type})
@@ -30,7 +30,7 @@ def analyze_file(base_url: str, image_path: str, source_type: str = "inspection"
 
 
 def analyze_base64(base_url: str, image_path: str, source_type: str = "google_maps") -> dict:
-    """Tek görsel: base64 (örn. Maps tile)."""
+    """Single image: base64 (e.g. Maps tile)."""
     url = f"{base_url.rstrip('/')}/v1/analyze"
     with open(image_path, "rb") as f:
         b64 = base64.b64encode(f.read()).decode()
@@ -40,7 +40,7 @@ def analyze_base64(base_url: str, image_path: str, source_type: str = "google_ma
 
 
 def analyze_batch(base_url: str, image_paths: list[str], source_type: str = "drone") -> dict:
-    """Çoklu görsel (örn. bir drone uçuşu)."""
+    """Multiple images (e.g. one drone flight)."""
     url = f"{base_url.rstrip('/')}/v1/analyze/batch"
     files = [("files", (Path(p).name, open(p, "rb"))) for p in image_paths]
     try:

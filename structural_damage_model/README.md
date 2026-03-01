@@ -99,17 +99,17 @@ See [data/FINETUNING_DATA.md](data/FINETUNING_DATA.md).
 
 ## Official evaluation (accuracy / BLEU / ROUGE)
 
-Resmi metrikler için eval set üzerinde model çalıştırıp BLEU-4 ve ROUGE-L hesaplanır:
+Run the model on an eval set to compute official BLEU-4 and ROUGE-L metrics:
 
 ```bash
-# Sadece metrik hesapla (eval dosyasında prediction varsa, model yok):
+# Compute metrics only (if eval file has prediction field, no model run):
 python -m structural_damage_model.run_eval --eval-file Test/test_images/eval_set_with_predictions.json --base-dir . --no-inference --output structural_damage_model/data/eval_results.json --update-metrics
 
-# Model ile gerçek tahminler (GPU önerilir):
+# Real predictions with model (GPU recommended):
 python -m structural_damage_model.run_eval --eval-file Test/test_images/test_results.json --base-dir . --model blip2 --output structural_damage_model/data/eval_results.json --update-metrics
 ```
 
-`--no-inference`: Eval dosyasında `prediction` alanı varsa model çalıştırmadan sadece metrik hesaplar. Sonuçlar `data/eval_results.json` ve `data/metrics.json` (README tablosu için) içine yazılır.
+`--no-inference`: If the eval file has a `prediction` field, only metrics are computed without running the model. Results are written to `data/eval_results.json` and `data/metrics.json` (for the README table).
 
 ---
 

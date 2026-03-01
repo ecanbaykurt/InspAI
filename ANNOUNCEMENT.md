@@ -1,10 +1,10 @@
-# InspAI / Structure Analysis — GitHub paylaşımı
+# InspAI / Structure Analysis — GitHub sharing
 
-Repo’yu GitHub’da duyurup paylaşırken aşağıdaki metni (İngilizce veya Türkçe) kısaltıp kullanabilirsiniz.
+When announcing or sharing the repo on GitHub, you can use the text below (shorten as needed).
 
 ---
 
-## Kısa duyuru (README / Social)
+## Short announcement (README / Social)
 
 **InspAI** — Open-source structural damage description model for drone and Google Maps imagery. One VLM (LLaVA/BLIP2), one API, fine-tunable on your labels.
 
@@ -14,7 +14,7 @@ Repo’yu GitHub’da duyurup paylaşırken aşağıdaki metni (İngilizce veya 
 
 ---
 
-## Release notes taslağı (GitHub Release)
+## Release notes template (GitHub Release)
 
 **Title:** InspAI v0.1 — Structural damage description model + API
 
@@ -29,13 +29,13 @@ Repo’yu GitHub’da duyurup paylaşırken aşağıdaki metni (İngilizce veya 
 
 ---
 
-## Paylaşım öncesi kontrol listesi
+## Pre-share checklist
 
-- [ ] README’de repo URL’i ve (varsa) canlı demo linki güncel
-- [ ] `structural_damage_model/README.md` içindeki metrikler ve “Official evaluation” bölümü güncel
-- [ ] `docs/API.md` ve `docs/DEPLOYMENT.md` linkleri çalışıyor
-- [ ] Gerekirse `.gitignore` ile büyük model dosyaları / `data/images` hariç tutuldu
-- [ ] Lisans dosyası (e.g. MIT) eklendi
-- [ ] GitHub repo’da “About” kısmına kısa açıklama ve konular (topics) eklendi
+- [ ] README repo URL and (if any) live demo link are up to date
+- [ ] Metrics and "Official evaluation" section in `structural_damage_model/README.md` are up to date
+- [ ] Links in `docs/API.md` and `docs/DEPLOYMENT.md` work
+- [ ] If needed, large model files / `data/images` are excluded via `.gitignore`
+- [ ] License file (e.g. MIT) is present
+- [ ] Short description and topics added in the GitHub repo "About" section
 
-Bu dosyayı ilk release sonrası silebilir veya `docs/` altına taşıyabilirsiniz.
+You can delete this file after the first release or move it under `docs/`.

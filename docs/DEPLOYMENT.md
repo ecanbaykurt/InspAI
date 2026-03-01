@@ -1,84 +1,84 @@
-# Structure Analysis: Eğitim, Servis ve Uygulama Kullanımı
+# Structure Analysis: Training, Serving, and Application Usage
 
-Hedef: Kendi **image detection / structure analysis** modelinizi (drone ve Google Maps görüntüleri için) **eğitip**, **tek bir API** üzerinden **servis edip**, uygulamada bu API’yi kullanmak.
+Goal: **Train** your own **image detection / structure analysis** model (for drone and Google Maps imagery), **serve** it through a **single API**, and use this API in your application.
 
-## Genel akış
+## Overall flow
 
 ```
-[Drone / Maps görselleri] → [Eğitim verisi] → [Model eğitimi] → [Checkpoint]
-                                                                    ↓
-[Uygulama] ← HTTP ← [Structure Analysis API] ← [Model yükleme]
+[Drone / Maps images] → [Training data] → [Model training] → [Checkpoint]
+                                                                   ↓
+[Application] ← HTTP ← [Structure Analysis API] ← [Model loading]
 ```
 
-1. **Veri toplama:** Drone ve/veya Google Maps’ten görseller; mümkünse hasar/yarı-yapı etiketleri.
-2. **Eğitim:** Bu repo’daki `structural_damage_model` veri formatı + LLaMA-Factory (veya benzeri) ile VLM fine-tuning.
-3. **Servis:** Eğitilmiş modeli `api/` ile aynı sunucuda çalıştırma; tek API (`/v1/analyze`) hem drone hem Maps için.
-4. **Uygulama:** Frontend veya mobil uygulama sadece bu API’yi çağırır (file veya base64).
+1. **Data collection:** Images from drone and/or Google Maps; damage/structure labels when possible.
+2. **Training:** Use this repo’s `structural_damage_model` data format + LLaMA-Factory (or similar) for VLM fine-tuning.
+3. **Serving:** Run the trained model on the same server as `api/`; single API (`/v1/analyze`) for both drone and Maps.
+4. **Application:** Your frontend or mobile app only calls this API (file or base64).
 
 ---
 
-## 1. Veri hazırlama
+## 1. Data preparation
 
-- **Drone:** Uçuşlardan alınan fotoğraflar; isimlendirme veya coğrafi bilgi (opsiyonel) korunabilir.
-- **Maps:** Static API / tile indirme ile alınan görüntüler; aynı `image_path` + `description` formatında tutulabilir.
+- **Drone:** Photos from flights; naming or geo metadata can be preserved (optional).
+- **Maps:** Images from Static API / tile download; keep the same `image_path` + `description` format.
 
-Örnek (mevcut pipeline ile uyumlu):
+Example (compatible with the existing pipeline):
 
 ```bash
-# Pipeline JSON’dan eğitim JSONL
+# Training JSONL from pipeline JSON
 python -m structural_damage_model.build_training_data --input path/to/out_merged.json --output structural_damage_model/data/training_captions.jsonl --use-base64
 python -m structural_damage_model.export_images_from_pipeline --input path/to/out_merged.json --out-dir structural_damage_model/data/images --jsonl structural_damage_model/data/training_captions.jsonl
 ```
 
-`training_captions.jsonl` içindeki `description` alanlarını gerçek hasar açıklamalarıyla doldurun (elle veya LLM ile). Drone/Maps için ayrı bir `source` sütunu ekleyebilirsiniz; eğitimde aynı model kullanılır, API’de `source_type` sadece loglama/bağlam için kullanılır.
+Fill the `description` fields in `training_captions.jsonl` with real damage descriptions (manually or with an LLM). You can add a `source` column for drone/Maps; the same model is used in training, and `source_type` in the API is for logging/context only.
 
 ---
 
-## 2. Model eğitimi
+## 2. Model training
 
-- Veri formatı: `structural_damage_model/data/llamafactory_damage_train.json` (LLaMA-Factory conversation formatı).
-- Dönüşüm: `convert_to_llamafactory.py` ile JSONL → LLaMA-Factory JSON.
-- Eğitim: LLaMA-Factory ile LLaVA (veya seçtiğiniz VLM) fine-tuning; LoRA önerilir.
-- Çıktı: Tek bir checkpoint (ör. `output/checkpoint-final`).
+- Data format: `structural_damage_model/data/llamafactory_damage_train.json` (LLaMA-Factory conversation format).
+- Conversion: JSONL → LLaMA-Factory JSON via `convert_to_llamafactory.py`.
+- Training: Fine-tune LLaVA (or your chosen VLM) with LLaMA-Factory; LoRA is recommended.
+- Output: A single checkpoint (e.g. `output/checkpoint-final`).
 
-Detay: `docs/STRUCTURAL_DAMAGE_MODEL_ROADMAP.md`, `structural_damage_model/data/FINETUNING_DATA.md`.
+Details: `docs/STRUCTURAL_DAMAGE_MODEL_ROADMAP.md`, `structural_damage_model/data/FINETUNING_DATA.md`.
 
 ---
 
-## 3. API servisi
+## 3. API service
 
-- **Kod:** `api/app.py`, `api/model_loader.py`, `api/schemas.py`.
-- **Çalıştırma:**
-  - Mock (model yok): `STRUCTURE_API_MOCK=1 python run_api.py`
+- **Code:** `api/app.py`, `api/model_loader.py`, `api/schemas.py`.
+- **Running:**
+  - Mock (no model): `STRUCTURE_API_MOCK=1 python run_api.py`
   - BLIP2: `STRUCTURE_API_MODEL=blip2 python run_api.py`
   - LLaVA: `STRUCTURE_API_MODEL=llava python run_api.py`
-  - Kendi checkpoint: `STRUCTURE_API_MODEL=llava STRUCTURE_API_MODEL_NAME=/path/to/checkpoint-final python run_api.py`  
-    (model_loader’da LLaVA path’i desteklenmeli; gerekirse `model_name`’i HuggingFace formatında export edin.)
+  - Your checkpoint: `STRUCTURE_API_MODEL=llava STRUCTURE_API_MODEL_NAME=/path/to/checkpoint-final python run_api.py`  
+    (model_loader must support the LLaVA path; export in HuggingFace format if needed.)
 
-- **Port:** Varsayılan 8000. Değiştirmek için: `uvicorn api.app:app --host 0.0.0.0 --port 8080`.
-
----
-
-## 4. Uygulamada API kullanımı
-
-- **Endpoint:** `POST /v1/analyze` (tek görsel: `file` veya `image_base64` + `source_type`: `drone` | `google_maps` | `inspection`).
-- **Batch:** `POST /v1/analyze/batch` (çoklu `files` + `source_type`).
-
-Örnekler (curl, Python, JS): `docs/API.md`.
-
-Uygulama tarafında:
-
-1. Drone veya Maps’ten görsel al (dosya veya base64).
-2. `source_type` ile kaynağı belirt.
-3. Yanıttaki `results[].damage_description` (ve ileride `labels`) kullan.
+- **Port:** Default 8000. To change: `uvicorn api.app:app --host 0.0.0.0 --port 8080`.
 
 ---
 
-## 5. Production notları
+## 4. Using the API in your application
 
-- **GPU:** LLaVA ve büyük modeller için CUDA’lı sunucu önerilir.
-- **Ortam:** `requirements-api.txt` ile aynı Python ortamında çalıştırın.
-- **Reverse proxy:** Nginx/Caddy ile TLS ve rate limit; API’yi `http://127.0.0.1:8000` üzerinden dinletin.
-- **Docker (opsiyonel):** `Dockerfile` ile `run_api.py` ve model path’ini kapsayacak bir image tanımlanabilir; model ağır olduğu için volume ile mount edilebilir.
+- **Endpoint:** `POST /v1/analyze` (single image: `file` or `image_base64` + `source_type`: `drone` | `google_maps` | `inspection`).
+- **Batch:** `POST /v1/analyze/batch` (multiple `files` + `source_type`).
 
-Bu sayfa, model eğitimi + tek API servisi + uygulama entegrasyonu akışını özetler; detaylar `API.md` ve `STRUCTURAL_DAMAGE_MODEL_ROADMAP.md` içindedir.
+Examples (curl, Python, JS): `docs/API.md`.
+
+In your application:
+
+1. Get an image from drone or Maps (file or base64).
+2. Set the source with `source_type`.
+3. Use `results[].damage_description` (and later `labels`) from the response.
+
+---
+
+## 5. Production notes
+
+- **GPU:** A CUDA server is recommended for LLaVA and larger models.
+- **Environment:** Use the same Python environment as `requirements-api.txt`.
+- **Reverse proxy:** Use Nginx/Caddy for TLS and rate limiting; expose the API on `http://127.0.0.1:8000`.
+- **Docker (optional):** You can define an image that includes `run_api.py` and the model path; mount the model as a volume if it is large.
+
+This page summarizes the flow from model training to single API serving to application integration; details are in `API.md` and `STRUCTURAL_DAMAGE_MODEL_ROADMAP.md`.
