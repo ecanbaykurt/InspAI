@@ -25,11 +25,12 @@ STRUCTURE_API_MOCK=1 python run_api.py
 - Swagger: http://localhost:8000/docs  
 - Analyze: `curl -X POST http://localhost:8000/v1/analyze -F "file=@image.jpg" -F "source_type=drone"`
 
-### 2. With real model (BLIP2 or LLaVA)
+### 2. With real model (LLaVA-1.5-7B, GPU recommended)
 
 ```bash
-STRUCTURE_API_MOCK=0 STRUCTURE_API_MODEL=blip2 python run_api.py
-# For GPU: STRUCTURE_API_MODEL=llava
+STRUCTURE_API_MOCK=0 python run_api.py
+# Optional: your fine-tuned checkpoint
+STRUCTURE_API_MODEL_NAME=/path/to/checkpoint python run_api.py
 ```
 
 ### 3. Using the API from your application

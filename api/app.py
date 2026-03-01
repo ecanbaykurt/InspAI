@@ -28,28 +28,27 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Config from env
-API_MODEL_BACKEND = os.environ.get("STRUCTURE_API_MODEL", "blip2")
+# Config from env: single served model (LLaVA-1.5-7B by default)
 API_MODEL_NAME = os.environ.get("STRUCTURE_API_MODEL_NAME") or None
 API_MOCK = os.environ.get("STRUCTURE_API_MOCK", "0").strip().lower() in ("1", "true", "yes")
 
 
 @app.on_event("startup")
 def startup():
-    load_model(backend=API_MODEL_BACKEND, model_name=API_MODEL_NAME, use_mock=API_MOCK)
+    load_model(model_name=API_MODEL_NAME, use_mock=API_MOCK)
 
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "model_backend": API_MODEL_BACKEND, "mock": API_MOCK}
+    from api.model_loader import DEFAULT_MODEL_ID
+    return {"status": "ok", "model": DEFAULT_MODEL_ID, "mock": API_MOCK}
 
 
 @app.get("/v1/model")
 def model_info():
-    from api.model_loader import _model_state
+    from api.model_loader import _model_state, DEFAULT_MODEL_ID
     return {
-        "backend": _model_state.get("backend") or API_MODEL_BACKEND,
-        "model_id": _model_state.get("model_id"),
+        "model_id": _model_state.get("model_id") or DEFAULT_MODEL_ID,
         "mock": API_MOCK,
     }
 

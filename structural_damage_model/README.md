@@ -140,7 +140,7 @@ The same model is exposed via a **single API** for drone and Google Maps (and in
 
 ```bash
 STRUCTURE_API_MOCK=1 python run_api.py   # test without model
-STRUCTURE_API_MODEL=blip2 python run_api.py
+python run_api.py                        # serve LLaVA-1.5-7B (best model)
 ```
 
 - **Endpoint:** `POST /v1/analyze` (file or base64 + `source_type`: `drone` \| `google_maps` \| `inspection`).

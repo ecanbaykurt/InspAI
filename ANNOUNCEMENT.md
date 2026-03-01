@@ -6,7 +6,7 @@ When announcing or sharing the repo on GitHub, you can use the text below (short
 
 ## Short announcement (README / Social)
 
-**InspAI** — Open-source structural damage description model for drone and Google Maps imagery. One VLM (LLaVA/BLIP2), one API, fine-tunable on your labels.
+**InspAI** — Open-source structural damage description model for drone and Google Maps imagery. Serves LLaVA-1.5-7B (best quality); one API, fine-tunable on your labels.
 
 - **Metrics (official eval):** BLEU-4 **0.11**, ROUGE-L **0.59** (eval set: 3 samples; re-run with your model for full benchmark).
 - **Use cases:** Inspection reports, drone surveys, Maps-based assessment; single `POST /v1/analyze` API.
@@ -21,7 +21,7 @@ When announcing or sharing the repo on GitHub, you can use the text below (short
 **Description:**
 
 - **Model:** Vision-language (LLaVA/BLIP2) for describing structural damage (cracks, spalling, corrosion, etc.) in one or two sentences.
-- **API:** Single endpoint `POST /v1/analyze` for drone, Google Maps, and inspection images; same response format.
+- **API:** Single model (LLaVA-1.5-7B), single endpoint `POST /v1/analyze` for drone, Google Maps, and inspection images.
 - **Evaluation:** Official BLEU-4 and ROUGE-L on eval set; see `structural_damage_model/run_eval.py` and `data/eval_results.json`.
 - **Quick start:** `bash structural_damage_model/quick_setup.sh` for data prep; `STRUCTURE_API_MOCK=1 python run_api.py` for API test.
 

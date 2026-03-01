@@ -10,6 +10,8 @@ A **single API** for structure/damage analysis (image detection) on **drone** an
 
 ## Running the service
 
+The API serves a **single model**: **LLaVA-1.5-7B** (best description quality). Optionally override with your fine-tuned checkpoint via `STRUCTURE_API_MODEL_NAME`.
+
 ```bash
 # Dependencies (once)
 pip install -r requirements-api.txt
@@ -17,11 +19,11 @@ pip install -r requirements-api.txt
 # Mock mode (no model, for testing)
 STRUCTURE_API_MOCK=1 python run_api.py
 
-# Real model (BLIP2, CPU/Mac friendly)
-STRUCTURE_API_MODEL=blip2 python run_api.py
+# Real model (LLaVA-1.5-7B; GPU recommended)
+python run_api.py
 
-# Real model (LLaVA, GPU recommended)
-STRUCTURE_API_MODEL=llava python run_api.py
+# Your own checkpoint (e.g. fine-tuned LLaVA)
+STRUCTURE_API_MODEL_NAME=/path/to/checkpoint python run_api.py
 ```
 
 Default: `http://0.0.0.0:8000`. Health: `GET http://localhost:8000/health`.
@@ -32,13 +34,13 @@ Default: `http://0.0.0.0:8000`. Health: `GET http://localhost:8000/health`.
 
 Service and model status.
 
-**Response:** `{ "status": "ok", "model_backend": "blip2", "mock": false }`
+**Response:** `{ "status": "ok", "model": "llava-hf/llava-1.5-7b-hf", "mock": false }`
 
 ### GET /v1/model
 
-Information about the loaded model.
+Information about the loaded model (always LLaVA-1.5-7B or your custom checkpoint).
 
-**Response:** `{ "backend": "blip2", "model_id": "Salesforce/blip2-opt-2.7b", "mock": false }`
+**Response:** `{ "model_id": "llava-hf/llava-1.5-7b-hf", "mock": false }`
 
 ### POST /v1/analyze
 

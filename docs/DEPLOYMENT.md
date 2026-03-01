@@ -50,10 +50,9 @@ Details: `docs/STRUCTURAL_DAMAGE_MODEL_ROADMAP.md`, `structural_damage_model/dat
 - **Code:** `api/app.py`, `api/model_loader.py`, `api/schemas.py`.
 - **Running:**
   - Mock (no model): `STRUCTURE_API_MOCK=1 python run_api.py`
-  - BLIP2: `STRUCTURE_API_MODEL=blip2 python run_api.py`
-  - LLaVA: `STRUCTURE_API_MODEL=llava python run_api.py`
-  - Your checkpoint: `STRUCTURE_API_MODEL=llava STRUCTURE_API_MODEL_NAME=/path/to/checkpoint-final python run_api.py`  
-    (model_loader must support the LLaVA path; export in HuggingFace format if needed.)
+  - Default (LLaVA-1.5-7B): `python run_api.py`
+  - Your checkpoint: `STRUCTURE_API_MODEL_NAME=/path/to/checkpoint-final python run_api.py`  
+    (export in HuggingFace format; same architecture as LLaVA-1.5-7B.)
 
 - **Port:** Default 8000. To change: `uvicorn api.app:app --host 0.0.0.0 --port 8080`.
 
